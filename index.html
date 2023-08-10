@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="script.js"></script>
+  <title>vigenere cipher</title>
+</head>
+<body>
+  <h1>encryptor and decryptor</h1>
+  <div class="cage">
+     <form id="encdecForm">
+       <h2> input form </h2>
+       <fieldset id="inputField">
+        <div class="row">
+          <div class="label"><label for="ip" >input</label></div>
+          <div class="box"><input type="text" id="ip"></div>
+        </div><br clear="both">
+        <div class="row">
+        <div class="label"><label for="key" >key</label></div>
+        <div class="box"><input type="text" id="key"></div>
+      </div><br clear="both">
+      <div class="row">
+      <label for="enc" style="font-size: 30px; color: black;"></label><input type="radio" name="slct" id="enc" value="encrypt" style="height: 20px; width: 20px;" checked="checked" />
+      <label for="enc" style="font-size: 30px; color: black;"></label><input type="radio" name="slct" id="dec" value="decrypt" style="height: 20px; width: 20px;"  />
+      </div><br clear="both" />
+      <div class="row">
+      <div class="label"><label for="result" >result</label></div>
+      <div class="box"><input type="text" id="result"></div>
+    </div><br clear="both">
+    <div class="row">
+   <input type="submit" value="Convert" name="convert" />
+   <input type="reset" value="Reset" name="resetButton" />
+    </div><br clear="both">
+       </fieldset>
+     </form>
+  </div>
+</body>
+</html>
